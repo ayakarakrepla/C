@@ -10,7 +10,7 @@ static char *user           = "root";
 static char *pass           = "";
 static char *dbname         = "test";
 unsigned int port           = 3306;
-static char *unix_socket    = NULL;
+static char *_socket    = NULL;
 unsigned int flag           = 0;
 
 int main(){
@@ -19,7 +19,7 @@ int main(){
     conn = mysql_init(NULL);
 
     // Veritabanı bağlantısı yapma
-    connect = mysql_real_connect(conn, host, user, pass, dbname, port, unix_socket, flag);
+    connect = mysql_real_connect(conn, host, user, pass, dbname, port, _socket, flag);
     if (!connect){
         fprintf(stderr, "Hata: %s [%d]\n", mysql_error(conn), mysql_errno(conn));
         getch();
