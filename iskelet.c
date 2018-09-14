@@ -7,8 +7,8 @@ int main(){
     setlocale(LC_ALL, "Turkish");
     
     // Ana omurga
+    // Kodlar buraya
     
     getch();
-
     return 0;
 }
