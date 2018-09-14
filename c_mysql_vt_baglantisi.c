@@ -8,9 +8,9 @@
 static char *host           = "localhost";
 static char *user           = "root";
 static char *pass           = "";
-static char *dbname         = "test";
+static char *dbname         = "test_db";
 unsigned int port           = 3306;
-static char *_socket    = NULL;
+static char *_socket        = NULL;
 unsigned int flag           = 0;
 
 int main(){
