@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 #include <windows.h>
 #include <mysql.h>
-#include <conio.h>
 
 // Bağlantı Parametreleri
 static char *host           = "localhost";
